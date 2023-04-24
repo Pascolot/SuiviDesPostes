@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* insertion d'image sur le page d'accueil */
+.background {
+    background: url("../../public/images/jouve-luminess.png") no-repeat center;
+    background-size: cover;
+}
+
+.badge {
+    @apply flex items-center justify-center absolute -top-2 -right-2.5 w-4 h-4 rounded-full text-xs text-white;
+}
+
+.badge2 {
+    @apply text-white rounded-full h-10 w-10 bg-slate-900 bg-opacity-50 flex justify-center items-center font-semibold text-sm text-center;
+}
+
+.bordering {
+    @apply border border-gray-500 dark:text-white;
+}
+
+.boutonShowhide {
+    @apply xs:hidden absolute -right-5 top-24 z-50 rounded-full outline-none w-10 h-10 border-0 bg-black dark:bg-white dark:bg-opacity-20 bg-opacity-20;
+}
+
+.bRight {
+    @apply border-r-2 border-r-white;
+}
+
+.btn {
+    @apply text-white bg-blue-700 px-5 py-2 rounded;
+}
+
+.btn2 {
+    @apply inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150;
+}
+
+.buttonModal {
+    @apply p-1 ml-auto bg-transparent border-0 text-black opacity-25 float-right text-3xl leading-none font-semibold outline-none focus:outline-none;
+}
+
+.closeModal {
+    @apply bg-transparent text-black font-bold h-10 w-10 text-2xl block outline-none focus:outline-none;
+}
+
+.contentForm {
+    @apply w-80 flex flex-col mt-2;
+}
+
+.contentPblm {
+    @apply w-4/5 max-w-sm bg-slate-200 dark:bg-slate-500 dark:text-gray-500 rounded-lg shadow-xs;
+}
+
+.dropdown {
+    @apply bg-opacity-95 duration-700 origin-top cursor-pointer shadow-lg rounded-lg absolute max-w-xs w-40 right-0 mt-1 top-12 z-50;
+}
+
+.dropdown2 {
+    @apply bg-opacity-95 duration-500 origin-top cursor-pointer shadow-lg rounded-lg absolute max-w-xs w-44 -right-8 top-12 z-50;
+}
+
+.dropdown3 {
+    @apply bg-opacity-95 duration-700 origin-top cursor-pointer shadow-lg rounded-lg absolute max-w-xs w-28 -right-4 mt-1 top-10 z-50;
+}
+
+.input {
+    @apply outline-none rounded-md shadow-sm border-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-400 focus:ring-opacity-50 pl-1 block w-full;
+}
+
+.input2 {
+    @apply outline-none duration-700 focus:border-blue-500 border-b border-gray-500 bg-slate-100 pl-1;
+}
+
+.inputForm {
+    @apply outline-none focus:border-blue-500 text-gray-700 font-semibold border-b border-gray-500 bg-white bg-opacity-0 pl-1;
+}
+
+.inputForm2 {
+    @apply pl-2 outline-none py-0.5 duration-500 border border-gray-500 border-opacity-25 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded;
+}
+
+.labelForm {
+    @apply self-start text-sm font-bold text-gray-500;
+}
+
+.labelForm2 {
+    @apply flex mb-1 font-medium text-sm text-gray-700;
+}
+
+.labelStyle {
+    @apply block font-medium py-1 text-sm text-slate-50;
+}
+
+.lang {
+    @apply hover:text-slate-50 hover:bg-slate-900 hover:bg-opacity-30 rounded-md px-5 py-2 font-semibold cursor-pointer;
+}
+
+.ms {
+    margin-bottom: 11.25px;
+}
+
+/* style pour la partie pair et impair d'un tableau */
+.oddEven {
+    @apply odd:bg-slate-200 odd:text-gray-700 even:bg-slate-700 even:text-white;
+}
+
+/* Lorsque la pagination est activée. */
+.paginateActive {
+    @apply text-white bg-blue-700 border-r border-r-gray-500 relative inline-flex items-center px-4 py-2 text-sm font-medium;
+}
+
+.paginateActive2 {
+    @apply text-red-700 bg-slate-50 rounded-full relative inline-flex items-center px-3 py-1 text-sm font-medium;
+}
+
+.paginateActive3 {
+    @apply text-red-700 bg-slate-100 rounded-full relative inline-flex items-center px-3 py-1 text-sm font-medium;
+}
+
+/* Lorsque la pagination est desactivée. */
+.paginateDesactive {
+    @apply text-blue-700 border-r border-gray-500 relative inline-flex items-center px-4 py-2 text-sm font-medium;
+}
+
+.paginateDesactive2 {
+    @apply text-blue-700 relative inline-flex items-center px-3 py-1 text-sm font-medium;
+}
+
+.popover {
+    @apply duration-500 border-2 border-blue-500 w-80 top-8 origin-top -right-24 opacity-80 flex flex-col items-center bg-slate-800 rounded z-50 text-white;
+}
+
+.rememberStyle {
+    @apply rounded border-gray-300 text-blue-400 shadow-sm focus:border-blue-400 focus:ring focus:ring-blue-400 focus:ring-opacity-50;
+}
+
+/* td dans le table tableEmployee a besoin de ceci  */
+.responsive {
+    @apply cm:before:ml-2 cm:before:flex cm:before:items-center cm:before:absolute cm:before:top-0 cm:before:left-0 cm:before:bottom-0 cm:p-2 cm:flex cm:justify-end cm:w-full p-3 text-sm relative;
+}
+
+/* style pour le champ recherche */
+.search {
+    @apply h-full xs:bg-opacity-0 text-gray-500 w-full cm:w-40 xs:w-0 py-2.5 pr-14 rounded-2xl border-0 outline-none shadow-md px-4 bg-slate-300;
+}
+
+.searching {
+    @apply absolute xs:top-0 xs:left-0 xs:bg-opacity-0 rounded-none cm:rounded-full text-xl py-2 px-3 right-0 text-gray-400 dark:text-slate-100 bg-blue-700;
+}
+
+/* sytle pour le champ recherche dans le table ListTable*/
+.search2 {
+    @apply outline-none text-gray-500 border border-gray-500 border-opacity-50 px-1 py-1 ml-2 duration-500 focus:ring-2 focus:ring-gray-700 dark:focus:ring-gray-500 focus:ring-opacity-50 rounded-md;
+}
+
+.search3 {
+    @apply outline-none text-gray-500 border border-gray-500 border-opacity-50 focus:border-blue-700 px-2 py-1 duration-500 focus:ring-2 focus:ring-blue-700 dark:focus:ring-blue-500 focus:ring-opacity-50 rounded-md;
+}
+
+.selectOne {
+    @apply inline-block border border-gray-500 border-opacity-50 rounded-md appearance-none w-16 outline-none py-1 pl-2 dark:text-black;
+    background: #fff url("../js/Projects/src/download.svg") right 0.75rem
+        center/8px 10px no-repeat;
+}
+
+.shadow-xs {
+    box-shadow: 8px 15px 11px 0px rgba(31, 15, 15, 0.75);
+    -webkit-box-shadow: 8px 15px 11px 0px rgba(31, 15, 15, 0.75);
+    -moz-box-shadow: 8px 15px 11px 0px rgba(31, 15, 15, 0.75);
+}
+
+.sidebarContent {
+    @apply items-center xs:justify-center text-slate-300 bg-opacity-10 hover:bg-light-white rounded-md m-4 px-2 list-none h-14 no-underline hover:cursor-pointer;
+}
+
+.sidebarSubmenu {
+    @apply flex items-center mb-1 text-slate-50 rounded-md hover:bg-slate-500 hover:bg-opacity-20 h-14 pl-12 no-underline text-lg hover:cursor-pointer;
+}
+
+.shadow-opact {
+    box-shadow: 6px 7px 2px 0px rgba(89, 89, 89, 0.3);
+    -webkit-box-shadow: 6px 7px 2px 0px rgba(89, 89, 89, 0.3);
+    -moz-box-shadow: 6px 7px 2px 0px rgba(89, 89, 89, 0.3);
+}
+
+.th {
+    @apply p-3 text-sm text-slate-50 border-r-2 border-r-white last:border-r-0 font-semibold tracking-wide text-center;
+}
+
+.topnav {
+    @apply w-full flex justify-between items-center shadow-lg h-16 bg-slate-100;
+}
+
+.yesNoButton {
+    @apply text-white bg-red-700 mx-4 my-4 px-4 py-1.5 rounded cursor-pointer;
+}
+
+/* Responsive pour le table pour l'utilisateur ResponsableTT */
+@screen cm {
+    .responsive::before {
+        content: attr(data-label);
+    }
+
+    .responsive {
+        margin-top: -1px;
+    }
+}
